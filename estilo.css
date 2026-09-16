@@ -1,0 +1,513 @@
+
+/* ESTILOS GENERALES */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: white;
+color: #222;
+}
+
+/* ENCABEZADO */
+
+header {
+background-color: #111;
+color: white;
+padding: 20px 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+/* LOGO */
+
+.logo h1 {
+    font-size: 35px;
+
+    color: #f4b400;
+}
+
+.logo p {
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+
+/* NAVEGACIÓN */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+
+/* INICIO */
+
+.inicio {
+    height: 500px;
+
+    background-image: url("imagenes/principal.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 80px;
+}
+
+
+/* TEXTO DEL INICIO */
+
+.texto-inicio {
+    background-color: rgba(0, 0, 0, 0.65);
+
+    color: white;
+
+    width: 500px;
+
+    padding: 40px;
+
+    border-radius: 10px;
+}
+
+.texto-inicio h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.texto-inicio p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* BOTÓN */
+
+.boton {
+    display: inline-block;
+
+    background-color: #f4b400;
+
+    color: #111;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: white;
+}
+
+
+/* DESTACADOS */
+
+.destacados {
+    text-align: center;
+
+    padding: 70px 40px;
+
+    background-color: #f5f5f5;
+}
+
+.destacados h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.destacados > p {
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+
+/* PRODUCTOS */
+
+.productos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+
+/* TARJETA */
+
+.producto {
+    width: 300px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    padding-bottom: 25px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+
+/* IMAGEN */
+
+.producto img {
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* INFORMACIÓN PRODUCTO */
+
+.producto h3 {
+    font-size: 23px;
+
+    margin: 20px 10px 10px;
+}
+
+.producto p {
+    color: #555;
+
+    line-height: 1.5;
+
+    padding: 0 20px;
+
+    margin-bottom: 15px;
+}
+
+.producto h4 {
+    color: #d88900;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÓN PRODUCTO */
+
+.boton-producto {
+    background-color: #111;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 25px;
+
+    border-radius: 5px;
+}
+
+.boton-producto:hover {
+    background-color: #f4b400;
+
+    color: #111;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.sobre-nosotros {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 70px;
+}
+
+.imagen-nosotros {
+    width: 50%;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.texto-nosotros {
+    width: 50%;
+}
+
+.texto-nosotros h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.texto-nosotros p {
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+
+/* PÁGINA PRODUCTOS */
+
+.pagina-productos {
+    padding: 70px 40px;
+
+    text-align: center;
+
+    min-height: 600px;
+}
+
+.pagina-productos h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.pagina-productos > p {
+    margin-bottom: 40px;
+
+    color: #666;
+}
+
+
+/* PÁGINA NOSOTROS */
+
+.pagina-nosotros {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 70px;
+
+    min-height: 600px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+
+    background-color: #f5f5f5;
+
+    padding: 70px 30px;
+}
+
+.contacto h2 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+/* PÁGINA CONTACTO */
+
+.contacto-pagina {
+    text-align: center;
+
+    padding: 70px 30px;
+
+    min-height: 600px;
+
+    background-color: #f5f5f5;
+}
+
+.contacto-pagina h2 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.datos {
+    margin: 30px;
+}
+
+.datos p {
+    margin: 10px;
+}
+
+
+/* FORMULARIO */
+
+form {
+    width: 450px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+}
+
+form label {
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+
+    resize: none;
+}
+
+form button {
+    padding: 13px;
+
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f4b400;
+
+    color: #111;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer h2 {
+    color: #f4b400;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .inicio {
+        padding: 30px;
+
+        height: 500px;
+    }
+
+    .texto-inicio {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 28px;
+    }
+
+    .sobre-nosotros,
+    .pagina-nosotros {
+        flex-direction: column;
+
+        padding: 50px 30px;
+    }
+
+    .imagen-nosotros,
+    .texto-nosotros {
+        width: 100%;
+    }
+
+}
+
